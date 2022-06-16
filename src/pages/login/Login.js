@@ -16,18 +16,13 @@ import Footer from "../../components/Footer/Footer";
 import { loginUser } from "../../actions/auth";
 import hasToken from "../../services/authService";
 
-import loginImage from "../../assets/loginImage.svg";
-import SofiaLogo from "../../components/Icons/SofiaLogo.js";
-import GoogleIcon from "../../components/Icons/AuthIcons/GoogleIcon.js";
-import TwitterIcon from "../../components/Icons/AuthIcons/TwitterIcon.js";
-import FacebookIcon from "../../components/Icons/AuthIcons/FacebookIcon.js";
-import GithubIcon from "../../components/Icons/AuthIcons/GithubIcon.js";
-import LinkedinIcon from "../../components/Icons/AuthIcons/LinkedinIcon.js";
+import loginImage from "../../assets/login.svg";
+
 
 const Login = (props) => {
 
   const [state, setState] = useState({
-    email: 'admin@flatlogic.com',
+    email: 'saif@gamil.com',
     password: 'password',
   })
 
@@ -54,14 +49,11 @@ const Login = (props) => {
           <Col xs={12} lg={6} className="left-column">
             <Widget className="widget-auth widget-p-lg">
               <div className="d-flex align-items-center justify-content-between py-3">
-                <p className="auth-header mb-0">Login</p>
+                <p className="auth-header mb-0">Se connecter</p>
                 <div className="logo-block">
-                  <SofiaLogo />
-                  <p className="mb-0">SOFIA</p>
+                
+                  <p className="mb-0">ADN EXPERRISE</p>
                 </div>
-              </div>
-              <div className="auth-info my-2">
-                <p>This is a real app with Node.js backend - use <b>"admin@flatlogic.com / password"</b> to login!</p>
               </div>
               <form onSubmit={(event) => doLogin(event)}>
                 <FormGroup className="my-3">
@@ -79,8 +71,8 @@ const Login = (props) => {
                 </FormGroup>
                 <FormGroup  className="my-3">
                   <div className="d-flex justify-content-between">
-                    <FormText>Password</FormText>
-                    <Link to="/error">Forgot password?</Link>
+                    <FormText>Mot de Passe </FormText>
+                    <Link to="/error">Mot de Passe oublié?</Link>
                   </div>
                   <Input
                     id="password"
@@ -95,17 +87,6 @@ const Login = (props) => {
                 </FormGroup>
                 <div className="bg-widget d-flex justify-content-center">
                   <Button className="rounded-pill my-3" type="submit" color="secondary-red">Login</Button>
-                </div>
-                <p className="dividing-line my-3">&#8195;Or&#8195;</p>
-                <div className="d-flex align-items-center my-3">
-                  <p className="social-label mb-0">Login with</p>
-                  <div className="socials">
-                    <a href="https://flatlogic.com/"><GoogleIcon /></a>
-                    <a href="https://flatlogic.com/"><TwitterIcon /></a>
-                    <a href="https://flatlogic.com/"><FacebookIcon /></a>
-                    <a href="https://flatlogic.com/"><GithubIcon /></a>
-                    <a href="https://flatlogic.com/"><LinkedinIcon /></a>
-                  </div>
                 </div>
                 <Link to="/register">Don’t have an account? Sign Up here</Link>
               </form>

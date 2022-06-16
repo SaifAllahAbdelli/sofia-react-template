@@ -50,7 +50,7 @@ import * as React from "react";
 
 // import s from "./Dashboard.module.scss";
 
-const Dashboard = () => {
+const GestionsDesPostes = () => {
   // const [checkboxes, setCheckboxes] = useState([true, false]);
 
   // const toggleCheckbox = (id) => {
@@ -60,9 +60,9 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h1>hello grom my dashbord admin</h1>
+      <h1>sahbi dhaw ye zabour</h1>
     </div>
   );
 };
 
-export default Dashboard;
+export default GestionsDesPostes;

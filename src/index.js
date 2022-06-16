@@ -1,7 +1,7 @@
 // -- React and related libs
 import React from 'react';
 import { render } from 'react-dom';
-
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 // -- Redux
 import { createStore, applyMiddleware } from "redux";
 import ReduxThunk from "redux-thunk";
